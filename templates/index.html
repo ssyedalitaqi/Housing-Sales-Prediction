@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Sales Forecast Prediction</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    </head>
+    <body>
+        
+        <form action="/prediction" method="post">
+            <div><span>Made by Syed Ali Taqi</span></div>
+            <div class="box">
+                
+                <div class="h">
+                    <h1>Sales Forecast</h1>
+                </div>
+                <div class="x">
+                    <input type="text" placeholder="areas size" name="f1">
+                </div>
+                <div class="x">
+                    <input type="text" placeholder="size of living space" name="f2">
+                </div>
+                <div class="x">
+                    <input type="text" placeholder="age of property" name="f3">
+                </div>
+                <div class="x">
+                    <input type="text" placeholder="zipcode" name="f4">
+                </div>
+                <div class="x">
+                    <input type="text" placeholder="no. of bathrooms" name="f5">
+                </div>
+                <div class="x">
+                    <input type="text" placeholder="no. of badrooms" name="f6">
+                </div>
+                <div class="x">
+                    <input type="text" placeholder="total yrs of renovation" name="f7">
+                </div>
+                <div class="x">
+                    <input type="text" placeholder="size of basement" name="f8"> 
+                </div>
+                <div class="x">
+                    <input type="text" placeholder="overall house grade" name="f9">
+                </div>
+                <div class="button">
+                    <input type="submit" class="btn" value="Forecast Sale" >
+                </div>
+                <div class="result">{{prediction}}</div>
+            </div>
+        </form>
+    </body>
+</html>
